@@ -1,0 +1,12 @@
+.vs/
+backend/bin/
+backend/obj/
+backend/.vs/
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+api.zip
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

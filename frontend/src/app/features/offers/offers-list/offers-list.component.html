@@ -1,0 +1,91 @@
+<div class="header-actions mb-4 d-flex justify-content-between align-items-center">
+  <div>
+    <h1 class="mb-1">Offres de Stage</h1>
+    <p class="text-muted">Consultez les offres disponibles au sein du Ministère.</p>
+  </div>
+  
+  <button *ngIf="authService.hasRole('MinistereRH') || authService.hasRole('Admin')" class="btn btn-primary" routerLink="/offres/nouvelle">
+    + Nouvelle Offre
+  </button>
+</div>
+
+<div *ngIf="isLoading()" class="text-center py-5">
+  <div class="spinner"></div>
+</div>
+
+<div *ngIf="!isLoading()" class="offers-grid">
+  <div class="card offer-card" *ngFor="let offer of offers()">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <h3 class="offer-title">{{ offer.titre }}</h3>
+        <span class="badge" [ngClass]="{'badge-success': offer.statut === 'Ouverte', 'badge-danger': offer.statut === 'Fermee'}">
+          {{ offer.statut }}
+        </span>
+      </div>
+      
+      <div class="offer-meta mb-3">
+        <span class="meta-item"><i class="icon-building"></i> {{ offer.direction }} ({{ offer.directionSigle }})</span>
+        <span class="meta-item"><i class="icon-location"></i> {{ offer.lieu }}</span>
+        <span class="meta-item"><i class="icon-calendar"></i> {{ offer.dateDebut | date:'dd/MM/yyyy' }}</span>
+      </div>
+      
+      <p class="offer-desc">{{ offer.description }}</p>
+      
+      <div class="offer-footer mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+        <div class="offer-tags">
+          <span class="badge badge-info">{{ offer.gratificationMensuelle ? offer.gratificationMensuelle + ' MAD' : 'Non rémunéré' }}</span>
+          <span class="badge badge-warning ml-2">{{ offer.nombrePostes }} poste(s)</span>
+        </div>
+        
+        <div class="actions">
+          <!-- Student Actions -->
+          <button *ngIf="authService.hasRole('Student') && offer.statut === 'Ouverte'" 
+                  class="btn btn-primary" (click)="openApplyModal(offer.id)">
+            Postuler
+          </button>
+          
+          <!-- RH Actions -->
+          <button *ngIf="authService.hasRole('MinistereRH') && offer.statut === 'Ouverte'" 
+                  class="btn btn-outline text-danger border-danger" (click)="closeOffer(offer.id)">
+            Fermer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="offers().length === 0" class="empty-state text-center py-5">
+    <p class="text-muted">Aucune offre disponible pour le moment.</p>
+  </div>
+</div>
+
+<!-- Modal Candidature (Simple overlay) -->
+<div class="modal-overlay" *ngIf="selectedOfferId">
+  <div class="modal-content card">
+    <div class="card-header">
+      <h3 class="card-title">Soumettre votre candidature</h3>
+      <button class="btn-close" (click)="closeApplyModal()">×</button>
+    </div>
+    <div class="card-body">
+      <div class="form-group mb-3">
+        <label class="form-label">Votre CV (PDF) *</label>
+        <input type="file" id="cv" class="form-control" accept=".pdf" (change)="onFileChange($event, 'cv')" required>
+      </div>
+      <div class="form-group mb-3">
+        <label class="form-label">Lettre de motivation (PDF) *</label>
+        <input type="file" id="lettre" class="form-control" accept=".pdf" (change)="onFileChange($event, 'lettre')" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message (optionnel)</label>
+        <textarea class="form-control" rows="4" [(ngModel)]="applicationMessage" placeholder="Exprimez vos motivations pour ce stage..."></textarea>
+      </div>
+      <div class="d-flex justify-content-end gap-2 mt-4">
+        <button class="btn btn-outline" (click)="closeApplyModal()" [disabled]="isApplying">Annuler</button>
+        <button class="btn btn-primary" (click)="submitApplication()" [disabled]="isApplying">
+          <span *ngIf="isApplying">Envoi...</span>
+          <span *ngIf="!isApplying">Envoyer la candidature</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

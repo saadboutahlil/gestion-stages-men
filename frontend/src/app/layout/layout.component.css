@@ -1,0 +1,20 @@
+.app-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 280px; /* Width of sidebar */
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevent overflow */
+  transition: margin-left 0.3s ease;
+}
+
+.page-content {
+  padding: 2.5rem;
+  flex: 1;
+  animation: fadeIn 0.4s ease-out;
+}

@@ -1,0 +1,189 @@
+﻿=== RAPPORT D'IMPORTATION DES STAGIAIRES HISTORIQUES ===
+Date de l'import : 21/05/2026 18:46:03
+Fichier source : C:\Users\pc gz\Desktop\saadboutahlil\PROJETS\stage info 23-26.xlsx
+Total lignes lues (sans en-têtes ni lignes vides) : 176
+Lignes avec erreurs de formatage ou ignorées : 48
+Groupes d'étudiants uniques à importer : 118
+
+--- LIGNES IGNORÉES ---
+[FEUILLE: Feuil1 - LIGNE: 25] Nom brut: 'mansoury' Prénom brut: 'hiba' - Erreurs: Date de début invalide : 12/6/2025 11/7/2025. Format de date non reconnu : 12/6/2025 11/7/2025
+[FEUILLE: Feuil1 - LIGNE: 26] Nom brut: 'laachari' Prénom brut: 'nourlhouda' - Erreurs: Date de début invalide : 10/7/2025 30/7/2025. Format de date non reconnu : 10/7/2025 30/7/2025
+[FEUILLE: Feuil1 - LIGNE: 30] Nom brut: 'ezzahaoui' Prénom brut: 'hamza' - Erreurs: Date de début invalide : 2/6/2025 11/7/2025. Format de date non reconnu : 2/6/2025 11/7/2025
+[FEUILLE: Feuil1 - LIGNE: 31] Nom brut: 'merazi ' Prénom brut: 'Lhoucine' - Erreurs: Date de début invalide : 1/7/2025 1/9/2025. Format de date non reconnu : 1/7/2025 1/9/2025
+[FEUILLE: Feuil1 - LIGNE: 45] Nom brut: 'aghzere' Prénom brut: 'zakariae' - Erreurs: Année de début 2032 hors plage (2020-2026)
+[FEUILLE: Feuil1 - LIGNE: 46] Nom brut: 'lagmaihi' Prénom brut: 'rafiq' - Erreurs: Année de début 2032 hors plage (2020-2026)
+[FEUILLE: Feuil1 - LIGNE: 58] Nom brut: 'maataoui' Prénom brut: 'naoual' - Erreurs: Date factice : 0/0/2024
+[FEUILLE: Feuil1 - LIGNE: 60] Nom brut: 'elouahdi' Prénom brut: 'mohammed' - Erreurs: Date manquante
+[FEUILLE: Feuil1 - LIGNE: 68] Nom brut: 'el bahlouli' Prénom brut: 'noreddine' - Erreurs: Date manquante
+[FEUILLE: Feuil1 - LIGNE: 87] Nom brut: 'sadok' Prénom brut: 'kanza' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 101] Nom brut: 'harni' Prénom brut: 'yassine' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 102] Nom brut: 'EL hardouz' Prénom brut: 'abdelilah' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 103] Nom brut: 'zakan' Prénom brut: 'walid' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 104] Nom brut: 'naciri' Prénom brut: 'ayoub' - Erreurs: Date factice : 0/0/2024
+[FEUILLE: Feuil1 - LIGNE: 105] Nom brut: 'es sabery' Prénom brut: 'zakaria' - Erreurs: Date factice : 0/0/2024
+[FEUILLE: Feuil1 - LIGNE: 106] Nom brut: 'hbabou' Prénom brut: 'walid' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 107] Nom brut: 'qotaibah' Prénom brut: 'hamza' - Erreurs: Date factice : 0/0/2020
+[FEUILLE: Feuil1 - LIGNE: 108] Nom brut: 'el quourtobi' Prénom brut: 'etarbi' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 109] Nom brut: 'benzaouagh' Prénom brut: 'rania' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 110] Nom brut: 'belghali' Prénom brut: 'oumyma' - Erreurs: Date factice : 0/0/2022
+[FEUILLE: Feuil1 - LIGNE: 111] Nom brut: 'boudama' Prénom brut: 'fatima zahra' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 112] Nom brut: 'allam' Prénom brut: 'wissal' - Erreurs: Date factice : 0/0/2022
+[FEUILLE: Feuil1 - LIGNE: 113] Nom brut: 'taher' Prénom brut: 'fatima' - Erreurs: Date factice : 0/0/2022
+[FEUILLE: Feuil1 - LIGNE: 114] Nom brut: 'aarab' Prénom brut: 'zineb' - Erreurs: Date factice : 0/0/2024
+[FEUILLE: Feuil1 - LIGNE: 115] Nom brut: 'lamkais' Prénom brut: 'noura ' - Erreurs: Date factice : 0/0/2024
+[FEUILLE: Feuil1 - LIGNE: 117] Nom brut: 'matallaoui' Prénom brut: 'farah' - Erreurs: Date factice : 0/0/2022
+[FEUILLE: Feuil1 - LIGNE: 118] Nom brut: 'ouqessou' Prénom brut: 'khaoula' - Erreurs: Date factice : 0/0/2022
+[FEUILLE: Feuil1 - LIGNE: 119] Nom brut: 'benzaouagh' Prénom brut: 'imane ' - Erreurs: Date factice : 0/0/2024
+[FEUILLE: Feuil1 - LIGNE: 120] Nom brut: 'elamrani' Prénom brut: 'farah' - Erreurs: Date factice : 0/0/2022
+[FEUILLE: Feuil1 - LIGNE: 121] Nom brut: 'essaadi' Prénom brut: 'hanane' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 122] Nom brut: 'elkadari' Prénom brut: 'imane ' - Erreurs: Date factice : 0/0/2024
+[FEUILLE: Feuil1 - LIGNE: 123] Nom brut: 'saadaoui ' Prénom brut: 'oumaima' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 124] Nom brut: 'saidi' Prénom brut: 'said' - Erreurs: Date factice : 0/0/2023
+[FEUILLE: Feuil1 - LIGNE: 127] Nom brut: 'el mamy' Prénom brut: 'meryem' - Erreurs: Date de début invalide : 1/7/2025 1/9/2025. Format de date non reconnu : 1/7/2025 1/9/2025
+[FEUILLE: Feuil1 - LIGNE: 128] Nom brut: 'oukacha ' Prénom brut: 'hanae' - Erreurs: Date de début invalide : 7/72025 7/8/2025. Format de date non reconnu : 7/72025 7/8/2025
+[FEUILLE: Feuil1 - LIGNE: 130] Nom brut: 'gambo ' Prénom brut: 'mohammed el misbah' - Erreurs: Date de début invalide : 25/6/2025 25/8/2025. Format de date non reconnu : 25/6/2025 25/8/2025
+[FEUILLE: Feuil1 - LIGNE: 133] Nom brut: 'rharrabi' Prénom brut: 'rihab ' - Erreurs: Date de début invalide : 7/7/2025 7/9/2025. Format de date non reconnu : 7/7/2025 7/9/2025
+[FEUILLE: Feuil1 - LIGNE: 134] Nom brut: 'el fantroussi' Prénom brut: 'douaa' - Erreurs: Date de début invalide : 1/7/2025 1/9/2025. Format de date non reconnu : 1/7/2025 1/9/2025
+[FEUILLE: Feuil1 - LIGNE: 135] Nom brut: 'chlibakh' Prénom brut: 'othman' - Erreurs: Date de début invalide : 7/7/2025 7/8/2025. Format de date non reconnu : 7/7/2025 7/8/2025
+[FEUILLE: Feuil1 - LIGNE: 136] Nom brut: 'rejouani' Prénom brut: 'dina ' - Erreurs: Date de début invalide : 1/7/2025 1/9/2025. Format de date non reconnu : 1/7/2025 1/9/2025
+[FEUILLE: Feuil1 - LIGNE: 137] Nom brut: 'aassouss ' Prénom brut: 'wijdan ' - Erreurs: Date de début invalide : 1/7/2025 1/9/2025. Format de date non reconnu : 1/7/2025 1/9/2025
+[FEUILLE: Feuil1 - LIGNE: 138] Nom brut: 'bahy' Prénom brut: 'nada ' - Erreurs: Date de début invalide : 1/7/2025 1/8/2025. Format de date non reconnu : 1/7/2025 1/8/2025
+[FEUILLE: Feuil1 - LIGNE: 139] Nom brut: 'koudri' Prénom brut: 'salma' - Erreurs: Date de début invalide : 1/7/2025 1/8/2025. Format de date non reconnu : 1/7/2025 1/8/2025
+[FEUILLE: Feuil1 - LIGNE: 140] Nom brut: 'bakadir' Prénom brut: 'oussama' - Erreurs: Date de début invalide : 2/7/2025 2/8/2025. Format de date non reconnu : 2/7/2025 2/8/2025
+[FEUILLE: Feuil1 - LIGNE: 141] Nom brut: 'boulmnal' Prénom brut: 'maryam' - Erreurs: Date de début invalide : 1/7/2025 1/8/2025. Format de date non reconnu : 1/7/2025 1/8/2025
+[FEUILLE: Feuil1 - LIGNE: 142] Nom brut: 'hbbani' Prénom brut: 'imane ' - Erreurs: Date de début invalide : 1/7/2025 01/08/2025. Format de date non reconnu : 1/7/2025 01/08/2025
+[FEUILLE: Feuil1 - LIGNE: 143] Nom brut: 'jellal' Prénom brut: 'douaa' - Erreurs: Date de début invalide : 1/7/2025 1/8/2025. Format de date non reconnu : 1/7/2025 1/8/2025
+[FEUILLE: Feuil1 - LIGNE: 409] Nom brut: '' Prénom brut: '%' - Erreurs: Nom ou prénom manquant ou invalide.
+
+--- DÉROULEMENT DE L'IMPORTATION ---
+[SUCCÈS] Importé : Yousra El Tayeb (2025) -> Email: eltayeb.yousra@2025.archive.men.gov.ma | CNE: ARCH_000001
+[SUCCÈS] Importé : Halima Houmadi (2025) -> Email: houmadi.halima@2025.archive.men.gov.ma | CNE: ARCH_000002
+[SUCCÈS] Importé : Salma Houmadi (2025) -> Email: houmadi.salma@2025.archive.men.gov.ma | CNE: ARCH_000003
+[SUCCÈS] Importé : Lhoucine Merkazi (2025) -> Email: merkazi.lhoucine@2025.archive.men.gov.ma | CNE: ARCH_000004
+[FUSION - DOUBLON] Amine Assou (2025) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Amine Assou (2025) -> Email: assou.amine@2025.archive.men.gov.ma | CNE: ARCH_000005
+[SUCCÈS] Importé : Safae Alaji (2025) -> Email: alaji.safae@2025.archive.men.gov.ma | CNE: ARCH_000006
+[FUSION - DOUBLON] Aymane Assou (2025) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Aymane Assou (2025) -> Email: assou.aymane@2025.archive.men.gov.ma | CNE: ARCH_000007
+[SUCCÈS] Importé : Mohammed Azzouzl (2025) -> Email: azzouzl.mohammed@2025.archive.men.gov.ma | CNE: ARCH_000008
+[SUCCÈS] Importé : Rayhana El Ajjouri (2025) -> Email: elajjouri.rayhana@2025.archive.men.gov.ma | CNE: ARCH_000009
+[SUCCÈS] Importé : Hamza Ait Houssin (2025) -> Email: aithoussin.hamza@2025.archive.men.gov.ma | CNE: ARCH_000010
+[FUSION - DOUBLON] Douae Jellal (2025) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Douae Jellal (2025) -> Email: jellal.douae@2025.archive.men.gov.ma | CNE: ARCH_000011
+[FUSION - DOUBLON] Dina Rejouani (2025) fusionné à partir de 3 lignes.
+[SUCCÈS] Importé : Dina Rejouani (2025) -> Email: rejouani.dina@2025.archive.men.gov.ma | CNE: ARCH_000012
+[FUSION - DOUBLON] Wijdane Aassouss (2025) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Wijdane Aassouss (2025) -> Email: aassouss.wijdane@2025.archive.men.gov.ma | CNE: ARCH_000013
+[SUCCÈS] Importé : Nour Elhoudazerbouhi (2025) -> Email: elhoudazerbouhi.nour@2025.archive.men.gov.ma | CNE: ARCH_000014
+[SUCCÈS] Importé : Ali Douae Toub (2025) -> Email: toub.alidouae@2025.archive.men.gov.ma | CNE: ARCH_000015
+[FUSION - DOUBLON] Hajar El Yousfi (2025) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Hajar El Yousfi (2025) -> Email: elyousfi.hajar@2025.archive.men.gov.ma | CNE: ARCH_000016
+[SUCCÈS] Importé : Nihad El Harnaf (2025) -> Email: elharnaf.nihad@2025.archive.men.gov.ma | CNE: ARCH_000017
+[FUSION - DOUBLON] Amal Alimou (2025) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Amal Alimou (2025) -> Email: alimou.amal@2025.archive.men.gov.ma | CNE: ARCH_000018
+[SUCCÈS] Importé : Larry Sama Jefferson (2025) -> Email: jefferson.larrysama@2025.archive.men.gov.ma | CNE: ARCH_000019
+[SUCCÈS] Importé : Fatima Fadil (2025) -> Email: fadil.fatima@2025.archive.men.gov.ma | CNE: ARCH_000020
+[SUCCÈS] Importé : Gambo Mohammed El Misbah (2025) -> Email: elmisbah.gambomohammed@2025.archive.men.gov.ma | CNE: ARCH_000021
+[SUCCÈS] Importé : Ouiame Boumani (2025) -> Email: boumani.ouiame@2025.archive.men.gov.ma | CNE: ARCH_000022
+[SUCCÈS] Importé : Malak Hatata (2025) -> Email: hatata.malak@2025.archive.men.gov.ma | CNE: ARCH_000023
+[SUCCÈS] Importé : Ikram Idrissi (2025) -> Email: idrissi.ikram@2025.archive.men.gov.ma | CNE: ARCH_000024
+[SUCCÈS] Importé : Nada Bahy (2025) -> Email: bahy.nada@2025.archive.men.gov.ma | CNE: ARCH_000025
+[SUCCÈS] Importé : Malak El Fadil (2024) -> Email: elfadil.malak@2024.archive.men.gov.ma | CNE: ARCH_000026
+[FUSION - DOUBLON] Salma Laghbassi (2024) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Salma Laghbassi (2024) -> Email: laghbassi.salma@2024.archive.men.gov.ma | CNE: ARCH_000027
+[SUCCÈS] Importé : Ismail El Kamel (2023) -> Email: elkamel.ismail@2023.archive.men.gov.ma | CNE: ARCH_000028
+[SUCCÈS] Importé : Amine Merzaki (2023) -> Email: merzaki.amine@2023.archive.men.gov.ma | CNE: ARCH_000029
+[SUCCÈS] Importé : Khawla Eddaoudi (2023) -> Email: eddaoudi.khawla@2023.archive.men.gov.ma | CNE: ARCH_000030
+[SUCCÈS] Importé : Othman Makroum (2023) -> Email: makroum.othman@2023.archive.men.gov.ma | CNE: ARCH_000031
+[SUCCÈS] Importé : Salsabil Massabih (2023) -> Email: massabih.salsabil@2023.archive.men.gov.ma | CNE: ARCH_000032
+[SUCCÈS] Importé : Hamza Itnane (2023) -> Email: itnane.hamza@2023.archive.men.gov.ma | CNE: ARCH_000033
+[SUCCÈS] Importé : Zineb Imejjne (2024) -> Email: imejjne.zineb@2024.archive.men.gov.ma | CNE: ARCH_000034
+[SUCCÈS] Importé : Wafae Harnaoui (2023) -> Email: harnaoui.wafae@2023.archive.men.gov.ma | CNE: ARCH_000035
+[SUCCÈS] Importé : Mouhssin Benbouziane (2024) -> Email: benbouziane.mouhssin@2024.archive.men.gov.ma | CNE: ARCH_000036
+[SUCCÈS] Importé : Douaa El Moufakkir (2023) -> Email: elmoufakkir.douaa@2023.archive.men.gov.ma | CNE: ARCH_000037
+[SUCCÈS] Importé : Amine Ben Ali (2024) -> Email: benali.amine@2024.archive.men.gov.ma | CNE: ARCH_000038
+[SUCCÈS] Importé : Doha Elboudri (2023) -> Email: elboudri.doha@2023.archive.men.gov.ma | CNE: ARCH_000039
+[SUCCÈS] Importé : Hiba Tigoulmamine (2022) -> Email: tigoulmamine.hiba@2022.archive.men.gov.ma | CNE: ARCH_000040
+[SUCCÈS] Importé : Houda Essayed (2023) -> Email: essayed.houda@2023.archive.men.gov.ma | CNE: ARCH_000041
+[SUCCÈS] Importé : Yassine Zerlmouti (2024) -> Email: zerlmouti.yassine@2024.archive.men.gov.ma | CNE: ARCH_000042
+[SUCCÈS] Importé : Fatima Zahra Lmloul (2023) -> Email: lmloul.fatimazahra@2023.archive.men.gov.ma | CNE: ARCH_000043
+[SUCCÈS] Importé : Anas Taha (2024) -> Email: taha.anas@2024.archive.men.gov.ma | CNE: ARCH_000044
+[SUCCÈS] Importé : Amana Aboubit (2023) -> Email: aboubit.amana@2023.archive.men.gov.ma | CNE: ARCH_000045
+[SUCCÈS] Importé : Anass Lahrech (2023) -> Email: lahrech.anass@2023.archive.men.gov.ma | CNE: ARCH_000046
+[SUCCÈS] Importé : Younes Soussou (2023) -> Email: soussou.younes@2023.archive.men.gov.ma | CNE: ARCH_000047
+[SUCCÈS] Importé : Aicha Regragui (2023) -> Email: regragui.aicha@2023.archive.men.gov.ma | CNE: ARCH_000048
+[SUCCÈS] Importé : Aymane Sahair (2023) -> Email: sahair.aymane@2023.archive.men.gov.ma | CNE: ARCH_000049
+[SUCCÈS] Importé : Amine Hamdaoui (2023) -> Email: hamdaoui.amine@2023.archive.men.gov.ma | CNE: ARCH_000050
+[SUCCÈS] Importé : Noura Lamkais (2024) -> Email: lamkais.noura@2024.archive.men.gov.ma | CNE: ARCH_000051
+[SUCCÈS] Importé : Ihad Zajli (2024) -> Email: zajli.ihad@2024.archive.men.gov.ma | CNE: ARCH_000052
+[SUCCÈS] Importé : Nihal Ndi (2024) -> Email: ndi.nihal@2024.archive.men.gov.ma | CNE: ARCH_000053
+[SUCCÈS] Importé : Fatima Boudabza (2023) -> Email: boudabza.fatima@2023.archive.men.gov.ma | CNE: ARCH_000054
+[SUCCÈS] Importé : Marouan Tadoumant (2023) -> Email: tadoumant.marouan@2023.archive.men.gov.ma | CNE: ARCH_000055
+[SUCCÈS] Importé : Assya Asbabou (2023) -> Email: asbabou.assya@2023.archive.men.gov.ma | CNE: ARCH_000056
+[SUCCÈS] Importé : Abil Garmi (2023) -> Email: garmi.abil@2023.archive.men.gov.ma | CNE: ARCH_000057
+[SUCCÈS] Importé : Noura Darghali (2024) -> Email: darghali.noura@2024.archive.men.gov.ma | CNE: ARCH_000058
+[SUCCÈS] Importé : Chaimae Ouhaddou (2024) -> Email: ouhaddou.chaimae@2024.archive.men.gov.ma | CNE: ARCH_000059
+[SUCCÈS] Importé : Salma Laafar (2024) -> Email: laafar.salma@2024.archive.men.gov.ma | CNE: ARCH_000060
+[SUCCÈS] Importé : Ibtissam Bouyacine (2024) -> Email: bouyacine.ibtissam@2024.archive.men.gov.ma | CNE: ARCH_000061
+[SUCCÈS] Importé : Ismail Bensellam (2024) -> Email: bensellam.ismail@2024.archive.men.gov.ma | CNE: ARCH_000062
+[SUCCÈS] Importé : Haytham Kassi (2024) -> Email: kassi.haytham@2024.archive.men.gov.ma | CNE: ARCH_000063
+[SUCCÈS] Importé : Salma Elbayed (2023) -> Email: elbayed.salma@2023.archive.men.gov.ma | CNE: ARCH_000064
+[SUCCÈS] Importé : Kaoutar Ait Ider (2023) -> Email: aitider.kaoutar@2023.archive.men.gov.ma | CNE: ARCH_000065
+[SUCCÈS] Importé : Khawla Alahmadi (2023) -> Email: alahmadi.khawla@2023.archive.men.gov.ma | CNE: ARCH_000066
+[SUCCÈS] Importé : Youssef Hasbi (2023) -> Email: hasbi.youssef@2023.archive.men.gov.ma | CNE: ARCH_000067
+[SUCCÈS] Importé : Ihssane Elamaizi (2024) -> Email: elamaizi.ihssane@2024.archive.men.gov.ma | CNE: ARCH_000068
+[SUCCÈS] Importé : Kaoutar Quibous (2022) -> Email: quibous.kaoutar@2022.archive.men.gov.ma | CNE: ARCH_000069
+[SUCCÈS] Importé : Charaf Eddine Elhmamouchi (2024) -> Email: elhmamouchi.charafeddine@2024.archive.men.gov.ma | CNE: ARCH_000070
+[SUCCÈS] Importé : Achraf Lazrak (2024) -> Email: lazrak.achraf@2024.archive.men.gov.ma | CNE: ARCH_000071
+[SUCCÈS] Importé : Ounnas Barma (2024) -> Email: barma.ounnas@2024.archive.men.gov.ma | CNE: ARCH_000072
+[FUSION - DOUBLON] Mohammed Laghrour (2022) fusionné à partir de 2 lignes.
+[SUCCÈS] Importé : Mohammed Laghrour (2022) -> Email: laghrour.mohammed@2022.archive.men.gov.ma | CNE: ARCH_000073
+[SUCCÈS] Importé : Elhasane Mehdioui (2024) -> Email: mehdioui.elhasane@2024.archive.men.gov.ma | CNE: ARCH_000074
+[SUCCÈS] Importé : Youssef Kbala (2023) -> Email: kbala.youssef@2023.archive.men.gov.ma | CNE: ARCH_000075
+[SUCCÈS] Importé : Oumayma Eddahmani (2023) -> Email: eddahmani.oumayma@2023.archive.men.gov.ma | CNE: ARCH_000076
+[SUCCÈS] Importé : Rim Loudifa (2024) -> Email: loudifa.rim@2024.archive.men.gov.ma | CNE: ARCH_000077
+[SUCCÈS] Importé : Meryem Marbit (2023) -> Email: marbit.meryem@2023.archive.men.gov.ma | CNE: ARCH_000078
+[SUCCÈS] Importé : Salima El Mouden (2024) -> Email: elmouden.salima@2024.archive.men.gov.ma | CNE: ARCH_000079
+[SUCCÈS] Importé : Maha Khafayah (2023) -> Email: khafayah.maha@2023.archive.men.gov.ma | CNE: ARCH_000080
+[SUCCÈS] Importé : Meraim Daamach (2023) -> Email: daamach.meraim@2023.archive.men.gov.ma | CNE: ARCH_000081
+[SUCCÈS] Importé : Mohammed Mjjat (2023) -> Email: mjjat.mohammed@2023.archive.men.gov.ma | CNE: ARCH_000082
+[SUCCÈS] Importé : Asmae Zouhri (2023) -> Email: zouhri.asmae@2023.archive.men.gov.ma | CNE: ARCH_000083
+[SUCCÈS] Importé : Fadoua Saffari (2023) -> Email: saffari.fadoua@2023.archive.men.gov.ma | CNE: ARCH_000084
+[SUCCÈS] Importé : Naime Ibtihal (2023) -> Email: ibtihal.naime@2023.archive.men.gov.ma | CNE: ARCH_000085
+[SUCCÈS] Importé : Ismail Hasnaoui (2023) -> Email: hasnaoui.ismail@2023.archive.men.gov.ma | CNE: ARCH_000086
+[SUCCÈS] Importé : Fatima Kaba (2023) -> Email: kaba.fatima@2023.archive.men.gov.ma | CNE: ARCH_000087
+[SUCCÈS] Importé : Farah Matallaoui (2023) -> Email: matallaoui.farah@2023.archive.men.gov.ma | CNE: ARCH_000088
+[SUCCÈS] Importé : Walid Hababou (2024) -> Email: hababou.walid@2024.archive.men.gov.ma | CNE: ARCH_000089
+[SUCCÈS] Importé : Zaid Ahmed Hindi (2023) -> Email: ahmedhindi.zaid@2023.archive.men.gov.ma | CNE: ARCH_000090
+[SUCCÈS] Importé : Rida El Haiba (2025) -> Email: elhaiba.rida@2025.archive.men.gov.ma | CNE: ARCH_000091
+[SUCCÈS] Importé : Aymane Senlaji (2025) -> Email: senlaji.aymane@2025.archive.men.gov.ma | CNE: ARCH_000092
+[SUCCÈS] Importé : Wissal Belbachir (2025) -> Email: belbachir.wissal@2025.archive.men.gov.ma | CNE: ARCH_000093
+[SUCCÈS] Importé : Hiba Tigoulmamne (2022) -> Email: tigoulmamne.hiba@2022.archive.men.gov.ma | CNE: ARCH_000094
+[SUCCÈS] Importé : Nihad El Harnaf (2023) -> Email: elharnaf.nihad@2023.archive.men.gov.ma | CNE: ARCH_000095
+[SUCCÈS] Importé : Merkazi Lhousin (2025) -> Email: lhousin.merkazi@2025.archive.men.gov.ma | CNE: ARCH_000096
+[SUCCÈS] Importé : Elaji Safae (2025) -> Email: safae.elaji@2025.archive.men.gov.ma | CNE: ARCH_000097
+[SUCCÈS] Importé : Azzouzi Mohammed (2025) -> Email: mohammed.azzouzi@2025.archive.men.gov.ma | CNE: ARCH_000098
+[SUCCÈS] Importé : El Ajjouri Rayane (2025) -> Email: rayane.elajjouri@2025.archive.men.gov.ma | CNE: ARCH_000099
+[SUCCÈS] Importé : Haamza Ait Oussine (2025) -> Email: aitoussine.haamza@2025.archive.men.gov.ma | CNE: ARCH_000100
+[SUCCÈS] Importé : Nour El Houda Zerbouhi (2025) -> Email: zerbouhi.nourelhouda@2025.archive.men.gov.ma | CNE: ARCH_000101
+[SUCCÈS] Importé : Douae Toub Ali (2025) -> Email: toubali.douae@2025.archive.men.gov.ma | CNE: ARCH_000102
+[SUCCÈS] Importé : Mohamed Bnitir (2026) -> Email: bnitir.mohamed@2026.archive.men.gov.ma | CNE: ARCH_000103
+[SUCCÈS] Importé : Oussama Ouassou (2026) -> Email: ouassou.oussama@2026.archive.men.gov.ma | CNE: ARCH_000104
+[SUCCÈS] Importé : Salma Ben Yamna (2026) -> Email: benyamna.salma@2026.archive.men.gov.ma | CNE: ARCH_000105
+[SUCCÈS] Importé : Saad Boutahlil (2026) -> Email: boutahlil.saad@2026.archive.men.gov.ma | CNE: ARCH_000106
+[SUCCÈS] Importé : Ismail Masnaoui (2026) -> Email: masnaoui.ismail@2026.archive.men.gov.ma | CNE: ARCH_000107
+[SUCCÈS] Importé : Aicha Regragui (2026) -> Email: regragui.aicha@2026.archive.men.gov.ma | CNE: ARCH_000108
+[SUCCÈS] Importé : Khaoula Eddaoudi (2026) -> Email: eddaoudi.khaoula@2026.archive.men.gov.ma | CNE: ARCH_000109
+[SUCCÈS] Importé : Hamza Jebri (2026) -> Email: jebri.hamza@2026.archive.men.gov.ma | CNE: ARCH_000110
+[SUCCÈS] Importé : Amine Benali (2026) -> Email: benali.amine@2026.archive.men.gov.ma | CNE: ARCH_000111
+[SUCCÈS] Importé : Abdelmalek Belaoud (2026) -> Email: belaoud.abdelmalek@2026.archive.men.gov.ma | CNE: ARCH_000112
+[SUCCÈS] Importé : El Mehdi Kiouah (2026) -> Email: kiouah.elmehdi@2026.archive.men.gov.ma | CNE: ARCH_000113
+[SUCCÈS] Importé : Aya Elkhadiri (2026) -> Email: elkhadiri.aya@2026.archive.men.gov.ma | CNE: ARCH_000114
+[SUCCÈS] Importé : Anas Mataich (2026) -> Email: mataich.anas@2026.archive.men.gov.ma | CNE: ARCH_000115
+[SUCCÈS] Importé : Hamza Trali (2026) -> Email: trali.hamza@2026.archive.men.gov.ma | CNE: ARCH_000116
+[SUCCÈS] Importé : Siham Chaouy (2026) -> Email: chaouy.siham@2026.archive.men.gov.ma | CNE: ARCH_000117
+[SUCCÈS] Importé : Youssef Mahyaoui (2026) -> Email: mahyaoui.youssef@2026.archive.men.gov.ma | CNE: ARCH_000118
+
+=== FIN DE L'IMPORTATION ===
+Total importés avec succès : 118
+Total doublons fusionnés : 10

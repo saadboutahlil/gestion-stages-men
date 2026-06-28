@@ -1,0 +1,105 @@
+:host {
+  display: block;
+  --blue: #3b82f6;
+  --blue-dark: #1e3a8a;
+  --purple: #8b5cf6;
+  --orange: #f59e0b;
+  --green: #10b981;
+  --cyan: #06b6d4;
+  --surface: #ffffff;
+  --radius-xl: 32px; /* Plus arrondi pour plus de douceur */
+}
+
+.dashboard-container {
+  padding: 30px; /* Plus d'espace autour */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Espacement du Header */
+.dashboard-header h1 {
+  font-size: 2.8rem; /* Plus grand */
+  letter-spacing: -0.03em;
+}
+
+.dashboard-header p {
+  font-size: 1.25rem; /* Plus lisible */
+  margin-top: 10px;
+}
+
+/* Glass Cards - Plus aérées */
+.glass-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-radius: var(--radius-xl);
+  padding: 40px !important; /* Beaucoup plus d'espace interne */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.glass-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Icons plus grandes */
+.card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 25px; /* Plus d'espace sous l'icône */
+}
+
+.stat-label {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+.display-4 {
+  font-size: 4.5rem; /* Chiffres géants */
+  line-height: 1;
+}
+
+/* Stage Hero Card */
+.stage-focus-card {
+  padding: 60px !important; /* Très aéré */
+  border-radius: 40px;
+  background: linear-gradient(135deg, var(--blue-dark) 0%, #3b82f6 100%);
+  margin-top: 20px;
+}
+
+.stage-focus-card h2 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.custom-progress {
+  height: 20px; /* Barre plus haute */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.info-pill {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+}
+
+/* Couleurs */
+.bg-blue-light { background: #eff6ff; color: var(--blue); }
+.bg-purple-light { background: #f5f3ff; color: var(--purple); }
+.text-blue { color: var(--blue); }
+.text-purple { color: var(--purple); }
+.fw-black { font-weight: 900; }
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,23 @@
+<div class="app-wrapper">
+  <app-sidebar></app-sidebar>
+  
+  <div class="main-content">
+    <app-navbar></app-navbar>
+    
+    <main class="page-content animate-fade-in">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="mb-4" *ngIf="breadcrumbs().length > 1">
+        <ol class="breadcrumb bg-white px-4 py-2 rounded-4 shadow-sm border-0 d-inline-flex">
+          <li class="breadcrumb-item" *ngFor="let crumb of breadcrumbs(); let last = last" [class.active]="last">
+            <a *ngIf="!last" [routerLink]="crumb.url" class="text-decoration-none text-primary fw-semibold">{{ crumb.label }}</a>
+            <span *ngIf="last" class="text-muted fw-bold">{{ crumb.label }}</span>
+          </li>
+        </ol>
+      </nav>
+
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  
+  <app-chatbot-widget></app-chatbot-widget>
+</div>

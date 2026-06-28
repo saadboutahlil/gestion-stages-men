@@ -1,0 +1,156 @@
+<div class="dashboard-container">
+  <!-- Header avec Date et Salutations -->
+  <div class="dashboard-header d-flex justify-content-between align-items-center mb-5">
+    <div>
+      <h1 class="display-6 fw-bold text-dark mb-1">Tableau de bord</h1>
+      <p class="text-muted fs-5">Ravi de vous revoir, <span class="text-primary fw-semibold">{{ authService.currentUser()?.fullName }}</span> !</p>
+    </div>
+    <div class="date-badge p-3 rounded-4 shadow-sm bg-white d-none d-md-flex align-items-center gap-3">
+      <i class="fa-solid fa-calendar-day text-primary fs-4"></i>
+      <div class="text-start">
+        <div class="fw-bold small text-uppercase opacity-50">Aujourd'hui</div>
+        <div class="fw-bold">{{ today | date:'dd MMMM yyyy' }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isLoading()" class="text-center py-5">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <div *ngIf="!isLoading() && dashboardData() as data" class="animate-fade-in">
+    
+    <!-- ── VUE ÉTUDIANT ── -->
+    <ng-container *ngIf="authService.hasRole('Student')">
+      <div class="row g-4 mb-5">
+        <div class="col-md-6">
+          <div class="stat-card glass-card border-0 p-4 h-100 shadow-sm position-relative overflow-hidden">
+            <div class="card-icon bg-blue-light"><i class="fa-solid fa-paper-plane"></i></div>
+            <h6 class="text-uppercase fw-bold text-muted small mb-4">Mes Candidatures</h6>
+            <div class="d-flex align-items-end gap-3">
+              <span class="display-4 fw-black text-blue">{{ data.candidaturesTotal }}</span>
+              <span class="badge bg-success-soft text-success mb-2 p-2 rounded-pill px-3">
+                <i class="fa-solid fa-check me-1"></i> {{ data.candidaturesAcceptees }} acceptées
+              </span>
+            </div>
+            <div class="decoration-circle"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="stat-card glass-card border-0 p-4 h-100 shadow-sm position-relative overflow-hidden">
+            <div class="card-icon bg-purple-light"><i class="fa-solid fa-file-invoice"></i></div>
+            <h6 class="text-uppercase fw-bold text-muted small mb-4">Rapports de Stage</h6>
+            <div class="d-flex align-items-end gap-3">
+              <span class="display-4 fw-black text-purple">{{ data.rapportsDeposes }}</span>
+              <span class="text-muted mb-2">documents déposés</span>
+            </div>
+            <div class="decoration-circle bg-purple"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage Actuel Section -->
+      <div *ngIf="data.hasStage" class="row">
+        <div class="col-12">
+          <div class="stage-focus-card rounded-5 p-5 text-white shadow-lg mb-5 overflow-hidden position-relative">
+            <div class="row align-items-center position-relative z-index-1">
+              <div class="col-md-8">
+                <span class="badge bg-white-20 text-white mb-3 px-3 py-2 rounded-pill text-uppercase small letter-spacing-1">Stage Actuel</span>
+                <h2 class="display-5 fw-bold mb-4">{{ data.stageSujet }}</h2>
+                
+                <div class="progression-box mb-4">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="fw-semibold">Progression du stage</span>
+                    <span class="fw-bold">{{ data.progression }}%</span>
+                  </div>
+                  <div class="custom-progress">
+                    <div class="progress-fill" [style.width.%]="data.progression"></div>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4">
+                  <div class="info-pill"><i class="fa-solid fa-tasks me-2"></i> {{ data.tachesTerminees }} / {{ data.tachesTotal }} Tâches</div>
+                  <div class="info-pill"><i class="fa-solid fa-clock me-2"></i> En cours</div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block text-center">
+                <i class="fa-solid fa-graduation-cap display-1 opacity-25"></i>
+              </div>
+            </div>
+            <div class="blob-bg"></div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <!-- ── VUE MINISTERE RH ── -->
+    <ng-container *ngIf="authService.hasRole('MinistereRH')">
+      <div class="row g-4">
+        <div class="col-md-3" *ngFor="let card of [
+          { label: 'Offres Ouvertes', value: data.offresOuvertes, icon: 'fa-briefcase', color: 'blue' },
+          { label: 'Candidatures', value: data.candidaturesEnAttente, icon: 'fa-user-graduate', color: 'orange' },
+          { label: 'Stages Actifs', value: data.stagesEnCours, icon: 'fa-users', color: 'green' },
+          { label: 'Conventions', value: data.conventionsSignees, icon: 'fa-file-signature', color: 'cyan' }
+        ]">
+          <div class="stat-card glass-card p-4 text-center">
+            <div class="card-icon mx-auto mb-3" [class]="'bg-'+card.color+'-light'"><i class="fa-solid" [class]="card.icon"></i></div>
+            <h6 class="text-uppercase fw-bold text-muted small mb-2">{{ card.label }}</h6>
+            <div class="display-6 fw-black" [class]="'text-'+card.color">{{ card.value }}</div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <!-- ── VUE ENCADRANT ── -->
+    <ng-container *ngIf="authService.hasRole('Encadrant')">
+      <div class="row g-4">
+        <div class="col-md-4" *ngFor="let card of [
+          { label: 'Mes Stagiaires', value: data.mesStagiairesCount, icon: 'fa-users', color: 'blue' },
+          { label: 'Tâches en attente', value: data.tachesEnAttente, icon: 'fa-list-check', color: 'orange' },
+          { label: 'Évaluations à faire', value: data.evaluationsAFaire, icon: 'fa-star', color: 'purple' }
+        ]">
+          <div class="stat-card glass-card p-4 text-center">
+            <div class="card-icon mx-auto mb-3" [class]="'bg-'+card.color+'-light'"><i class="fa-solid" [class]="card.icon"></i></div>
+            <h6 class="text-uppercase fw-bold text-muted small mb-2">{{ card.label }}</h6>
+            <div class="display-6 fw-black" [class]="'text-'+card.color">{{ card.value }}</div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <!-- ── VUE SCHOOL ── -->
+    <ng-container *ngIf="authService.hasRole('School')">
+      <div class="row g-4">
+        <div class="col-md-4" *ngFor="let card of [
+          { label: 'Candidatures acceptées', value: data.candidaturesAcceptees, icon: 'fa-check-circle', color: 'green' },
+          { label: 'Conventions à signer', value: data.conventionsASigner, icon: 'fa-file-signature', color: 'orange' },
+          { label: 'Stages à suivre', value: data.stagesASuivre, icon: 'fa-eye', color: 'blue' }
+        ]">
+          <div class="stat-card glass-card p-4 text-center">
+            <div class="card-icon mx-auto mb-3" [class]="'bg-'+card.color+'-light'"><i class="fa-solid" [class]="card.icon"></i></div>
+            <h6 class="text-uppercase fw-bold text-muted small mb-2">{{ card.label }}</h6>
+            <div class="display-6 fw-black" [class]="'text-'+card.color">{{ card.value }}</div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <!-- ── VUE ADMIN ── -->
+    <ng-container *ngIf="authService.hasRole('Admin')">
+      <div class="row g-4">
+        <div class="col-md-4" *ngFor="let card of [
+          { label: 'Stages actifs', value: data.stagesActifs, icon: 'fa-graduation-cap', color: 'blue' },
+          { label: 'Conventions signées', value: data.conventionsSignees, icon: 'fa-file-contract', color: 'green' },
+          { label: 'Rapports en attente', value: data.rapportsEnAttente, icon: 'fa-file-invoice', color: 'orange' }
+        ]">
+          <div class="stat-card glass-card p-4 text-center">
+            <div class="card-icon mx-auto mb-3" [class]="'bg-'+card.color+'-light'"><i class="fa-solid" [class]="card.icon"></i></div>
+            <h6 class="text-uppercase fw-bold text-muted small mb-2">{{ card.label }}</h6>
+            <div class="display-6 fw-black" [class]="'text-'+card.color">{{ card.value }}</div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

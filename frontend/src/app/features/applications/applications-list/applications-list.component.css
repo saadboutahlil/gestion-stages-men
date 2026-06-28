@@ -1,0 +1,41 @@
+.text-sm {
+  font-size: 0.75rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--border);
+  border-radius: 50%;
+  border-top-color: var(--primary);
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.btn-outline {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000;
+}
+.modal-card {
+  background: white; padding: 2rem; border-radius: 12px; width: 100%; max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.grid-form { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.form-group label { display: block; font-weight: 500; margin-bottom: 0.25rem; font-size: 0.9rem; }
+.form-group input, .form-group textarea { width: 100%; padding: 0.5rem; border: 1px solid var(--border); border-radius: 6px; }
+.form-group textarea { height: 100px; }
+.form-actions { display: flex; justify-content: flex-end; gap: 1rem; }

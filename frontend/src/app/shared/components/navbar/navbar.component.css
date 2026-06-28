@@ -1,0 +1,125 @@
+.navbar {
+  height: 70px;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* --- Barre de recherche --- */
+.navbar-left {
+  flex: 1;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 500px; /* Barre beaucoup plus large */
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  padding-left: 2.8rem;
+  padding-right: 4.5rem;
+  height: 44px; /* Un peu plus haute */
+  background-color: #f1f3f5;
+  border: 1px solid transparent;
+  box-shadow: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:hover {
+  background-color: #e9ecef;
+}
+
+.search-input:focus {
+  background-color: white;
+  border-color: var(--primary-light, #0d6efd);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.search-icon {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #868e96;
+  transition: color 0.3s ease;
+}
+
+.search-input:focus + .search-icon {
+  color: var(--primary-light, #0d6efd);
+}
+
+.search-shortcut {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #adb5bd;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-weight: 600;
+  pointer-events: none;
+}
+/* ------------------------ */
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.text-right { text-align: right; }
+
+.user-info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-main);
+}
+
+.user-email {
+  font-size: 0.75rem;
+}
+
+.avatar-sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.btn-logout {
+  color: var(--danger);
+  border-color: var(--danger);
+  padding: 0.4rem 0.8rem;
+}
+
+.btn-logout:hover {
+  background-color: var(--danger);
+  color: white;
+}

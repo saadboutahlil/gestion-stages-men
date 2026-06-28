@@ -1,0 +1,6 @@
+@GestionStagesMEN.Api_HostAddress = http://localhost:5014
+
+GET {{GestionStagesMEN.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

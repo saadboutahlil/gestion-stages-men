@@ -1,0 +1,41 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="logo-mini">
+      <svg viewBox="0 0 120 120" width="32" height="32">
+        <polygon points="60,18 67,42 93,42 72,56 79,80 60,66 41,80 48,56 27,42 53,42" fill="#C1272D"/>
+        <path d="M40 68 Q60 58 60 78 Q60 58 80 68" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="brand-info">
+      <span class="brand-text">Stages MEN</span>
+      <span class="brand-sub">Maroc</span>
+    </div>
+  </div>
+
+  <div class="user-info">
+    <div class="avatar">{{ userRole().charAt(0) }}</div>
+    <div class="user-details">
+      <span class="role-badge">{{ userRole() }}</span>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <ul class="nav-list">
+      <ng-container *ngFor="let item of filteredMenu(); let i = index">
+        <li class="nav-category-header" *ngIf="item.category && (i === 0 || filteredMenu()[i-1].category !== item.category)">
+          {{ item.category }}
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="item.route" routerLinkActive="active" class="nav-link" [routerLinkActiveOptions]="{exact: item.route === '/dashboard'}">
+            <i [class]="item.icon" class="nav-icon-fa"></i>
+            <span class="nav-label">{{ item.label }}</span>
+          </a>
+        </li>
+      </ng-container>
+    </ul>
+  </nav>
+
+  <div class="sidebar-footer">
+    <p>DSI — MEN</p>
+  </div>
+</aside>
