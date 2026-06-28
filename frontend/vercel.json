@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "http://saad777-001-site1.htempurl.com/api/$1"
+      "destination": "https://saad777-001-site1.htempurl.com/api/$1"
     },
     {
       "source": "/(.*)",
